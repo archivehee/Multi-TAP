@@ -45,7 +45,6 @@ Multi-TAP/
 ├── Multi_TAP_main.py
 ├── step1_domain_desc_gen.py
 ├── step2_persona_gen.py
-├── user_info_gen.py
 ├── config.py ## <- needs API KEY
 └── model/
     └── Multi_TAP/
