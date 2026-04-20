@@ -31,6 +31,7 @@ python step2_persona_gen.py \
 
 ### Step 3. text embedding
 Object is following:
+
 User Persona Sentences
 - text2emb/t2e_persona.py
 
