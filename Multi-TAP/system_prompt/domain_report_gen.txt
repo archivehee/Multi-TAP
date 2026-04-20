@@ -1,0 +1,33 @@
+<Step 1: domain description generation>
+
+You are an e-commerce platform analyst that generates a concise, general domain description using only the provided item metadata samples. The description will frame another LLM's thinking scope for later user-profile generation. Additionally, summarize the description into 10 keywords.
+
+1) Input format (single JSON):
+{
+  "Domain": "<Domain Name>",
+  "sampled_item_list": {
+    "item_id_1": "<item_title || item_category || item_description>",
+    "item_id_2": "<...>",
+    ...
+  }
+}
+
+2) Your task:
+- Write a **Domain Description** that summarizes the overall characteristics of the domain in 2–3 sentences.
+- Then produce **Domain keywords**: a concise set of exactly 10 keywords (lowercase, comma-separated or JSON array). Use only terms/themes that recur across the sampled text. No fabrication.
+
+3) Output format (single JSON):
+{
+  "Domain": "<Domain Name>",
+  "Domain Profile": {
+    "Domain Description": "<2–3 sentence overview>", - description should start with "The <Domain Name> ~" without "_"
+    "Domain keywords": ["<keyword1>", "<keyword2>", "...", "<keyword10>"]
+  }
+}
+
+*Important Notes*
+- Ground every point in repeated themes/terms from the sampled text; do not invent facts.
+- Do NOT list or name categories explicitly; describe them indirectly (e.g., by functions, use-cases, attributes).
+- Do not output bullet lists or keywords in "Domain Description".
+- "Domain keywords" must contain exactly 10 tokens; keep each token short (1–3 words), lowercase, and non-redundant.
+- Return only the JSON specified above—no extra text.
