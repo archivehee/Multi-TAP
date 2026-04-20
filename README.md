@@ -32,9 +32,10 @@ python step2_persona_gen.py \
 ### Step 3. text embedding
 Object is following:
 User Persona Sentences
-text2emb/t2e_persona.py
+- text2emb/t2e_persona.py
+
 Item meta data (Domain Description || Domain Description Keywords || Item's specific category)
-text2emb/t2e_itm.py
+- text2emb/t2e_itm.py
 
 ## Implementation
 
