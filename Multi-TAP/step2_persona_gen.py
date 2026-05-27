@@ -265,11 +265,11 @@ def build_inputs(domain, meta, reviews, domain_descs, user_info):
             "Domain": domain,
             "Domain description": desc,
             "User ID": uid,
-            "category_price_level": uinfo.get("price_affiliated_group", {}),
-            "category_rating_level": uinfo.get("rating_score_preferred_group", {}),
-            "category_popularity_level": uinfo.get("rating_nums_preferred_group", {}),
-            "category_familiarity_level": uinfo.get("cats_familiarity", {}),
-            "overall_category_diversity": uinfo.get("cats_interaction_diversity", ""),
+            "category_price_level": uinfo.get("category_price_level", {}),
+            "category_rating_level": uinfo.get("category_rating_level", {}),
+            "category_popularity_level": uinfo.get("category_popularity_level", {}),
+            "category_familiarity_level": uinfo.get("category_familiarity_level", {}),
+            "overall_category_diversity": uinfo.get("overall_category_diversity", ""),
             "History": hist,
         })
     return inputs
