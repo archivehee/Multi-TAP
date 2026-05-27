@@ -9,7 +9,7 @@ The persona must jointly reflect the following feature dimensions in an integrat
 
 # Instructions
 * Ground every sentence in the provided context; do not invent facts. 
-* Utilize USER SPECIFIC INPUTS firstly, then History. The persona sentences must be 150 characters maximum.
+* Utilize USER SPECIFIC INPUTS firstly, then History.
 * In persona sentences, you can write category names but NEVER include item titles; item titles appear only in "representative_items".
 * Map levels to language consistently:
   - H = “tends to prefer higher [price/rating/popularity/familiarity] in <category>”
