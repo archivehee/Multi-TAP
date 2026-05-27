@@ -246,11 +246,11 @@ def build_domain_user_info(domain, selected_users):
     for uid in sorted(selected_users):
         out.append({
             "user_id": uid,
-            "price_affiliated_group": user_price_LMH.get(uid, {}),
-            "rating_score_preferred_group": user_rating_LMH.get(uid, {}),
-            "rating_nums_preferred_group": user_ratnum_LMH.get(uid, {}),
-            "cats_familiarity": cats_fam_labels.get(uid, {}),
-            "cats_interaction_diversity": user_diversity_LMH.get(uid, "L"),
+            "category_price_level": user_price_LMH.get(uid, {}),
+            "category_rating_level": user_rating_LMH.get(uid, {}),
+            "category_popularity_level": user_ratnum_LMH.get(uid, {}),
+            "category_familiarity_level": cats_fam_labels.get(uid, {}),
+            "overall_category_diversity": user_diversity_LMH.get(uid, "L"),
         })
     return out
 
