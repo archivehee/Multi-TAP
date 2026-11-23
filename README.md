@@ -1,5 +1,5 @@
-# Multi-TAP - SIGKDD 2026
-https://doi.org/10.1145/3770855.3818138
+# Multi-TAP - published in KDD 2026
+Paper: https://doi.org/10.1145/3770855.3818138
 
 ## Main Process
 ### Step 0. User specific information Pre-generation
